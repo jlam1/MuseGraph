@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\libs\libmuse_android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e756fe8826070e7f2a88030bf3dcfdf68a625905">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\2\libmuse_android_832d420dea1e38354e148703ae4a8a4a2d1127b2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_3abad71a4de78a5f00383c7a01e1375cfd173fe7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_825092f17e8956fd69c1acb0a263ef97c9b83d04\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_feb372dc832d9fed3652279130dd49e09390f6aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1c672fa1f3d3025ca148ba89af07583ae427d3bb">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_40cf8722b15e0cca6a8dfded4ad9730525d05cf3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bdd5ae553eb7f9555b235156099b5b0d2fd782ce">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f2e334eaf08017c932ad87664706acdadbd6c7bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_0384522276784ee51cec6e32a7ce0b2e40e6bd1d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_c0a2dac00a70455692a162bb702d4f75b704609b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.9\4244e2998018aa492389e8e30a77b7987959608e\MPAndroidChart-v2.0.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4244e2998018aa492389e8e30a77b7987959608e">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.0.9_0f2e979006c9a81f5c46d2cccf081dff8d0cffa8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_cdd4059ab6c10f304b3d9ad684d30545f1871eef\classes.dex" />
+    </item>
+
+</items>

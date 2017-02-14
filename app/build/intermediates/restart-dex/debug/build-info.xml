@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="586270459525868"
+    token="6137867714571325243"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+
+    <build
+        timestamp="581692383200388"
+        verifier="MANIFEST_FILE_CHANGE" >
+        <artifact
+            location="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="586008529584316"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="586270459525868"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\johnl\OneDrive\Documents\[2017]\ITEC4400\MuseGraphs\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+
+</instant-run>

@@ -1,0 +1,7 @@
+#Tue Feb 14 11:22:11 EST 2017
+base.0=C\:\\Users\\johnl\\OneDrive\\Documents\\[2017]\\ITEC4400\\MuseGraphs\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_40cf8722b15e0cca6a8dfded4ad9730525d05cf3
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\johnl\\OneDrive\\Documents\\[2017]\\ITEC4400\\MuseGraphs\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f2e334eaf08017c932ad87664706acdadbd6c7bd\\classes.dex
+base.1=C\:\\Users\\johnl\\OneDrive\\Documents\\[2017]\\ITEC4400\\MuseGraphs\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f2e334eaf08017c932ad87664706acdadbd6c7bd
+file.0=C\:\\Users\\johnl\\OneDrive\\Documents\\[2017]\\ITEC4400\\MuseGraphs\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_40cf8722b15e0cca6a8dfded4ad9730525d05cf3\\classes.dex
