@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TestLibMuseAndroid</string>
+    <string name="app_name">MuseGraph</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="connect">Connect</string>
@@ -22,5 +22,10 @@
     <string name="permission_dialog_title">Muse Needs Your Permission</string>
     <string name="permission_dialog_description">Muse needs a few permissions to work properly. On the next screens, tap "Allow" to proceed. If you deny, Muse will not work properly until you go into your Android settings and allow.</string>
     <string name="permission_dialog_understand">I Understand</string>
-    <string name="eeg_info">EEG records the electrical activity from the surface of the brain. • Faster brain waves cause awareness. • Slow brain waves cause drowsiness and laziness. • Depending on what activities the person is doing it can have frequency ranges from 0.3 - 70hz</string>
-    </resources>
+    <string name="eeg_info">EEG records the electrical activity from the surface of the brain. \n\n• Faster brain waves cause awareness \n• Slow brain waves cause drowsiness \n\tand laziness\n• Try clenching jaw or blinking rapidly</string>
+    <string name="alpha_info">Frequency: 8-13Hz\n\n • Common in adults when awaked with eyes closed and relaxed both mentally and physically\n • Alpha waves can be maintained even when eyes opened through relaxation techniques</string>
+    <string name="beta_info">Frequency: 13-38Hz\n\n • Beta rhythms occur in individuals who are alert and attentive to external stimuli or exert specific mental effort\n • Occurs when highly engaging activities such as critical thinking, decision making, socializing\n • Lack of beta activities can cause mental or emotional disorders and depression\n • Engaging in beta activities can help stability in emotional, energy levels, and concentration</string>
+    <string name="delta_info">Frequency: 3hz or below\n\n • Common in deep sleeping adults, children, and infants\n • Highest amplitude and slowest wave\n • Associated with the deepest levels of relaxation and restorative, healing sleep, growth</string>
+    <string name="gamma_info">Frequency: 38hz or more\n\n • These are involved in higher processing tasks as well as cognitive functioning\n • Important for learning, memory and processing information\n • Highly active when in states of universal love, altruism, and the ‘higher virtues’</string>
+    <string name="theta_info">Frequency: 3-8hz\n\n • Common in children up to 13 years and in most sleep\n • Occurs from drowsiness, daydreaming, about to fall asleep, just waking up\n • Associated with creativity and remembering memories</string>
+</resources>

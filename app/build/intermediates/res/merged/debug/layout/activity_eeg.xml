@@ -9,11 +9,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    android:weightSum="6"
+    android:weightSum="5"
+    android:background="@android:color/darker_gray"
     tools:context="com.choosemuse.example.libmuse.EegActivity">
 
     <LinearLayout
         android:orientation="vertical"
+        android:id="@+id/lineChartLayout"
         android:layout_width="match_parent"
         android:layout_weight="3"
         android:layout_height="match_parent">
@@ -25,31 +27,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:id="@+id/lineChartLayout"
         android:layout_weight="2"
         android:layout_alignParentTop="true">
 
         <TextView
-            android:text="EEG records the electrical activity from the surface of the brain. • Faster brain waves cause awareness. • Slow brain waves cause drowsiness and laziness. • Depending on what activities the person is doing it can have frequency ranges from 0.3 - 70hz"
+            android:text="@string/eeg_info"
             android:layout_width="match_parent"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingTop="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:id="@+id/eeg_info"
-            android:layout_weight="2"
-            android:layout_height="match_parent" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
 
         <Button
             android:text="START"
             android:layout_width="match_parent"
             android:id="@+id/start_button"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:layout_height="wrap_content" />
+
     </LinearLayout>
 
 </LinearLayout>

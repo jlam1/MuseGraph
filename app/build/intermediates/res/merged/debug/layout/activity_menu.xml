@@ -8,14 +8,72 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/darker_gray"
     tools:context="com.choosemuse.example.libmuse.MenuActivity">
 
     <Button
-        android:text="CONNECT"
+        android:text="SETTINGS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="39dp"
         android:id="@+id/connect_button" />
+
+    <Button
+        android:text="EEG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/connect_button"
+        android:layout_toStartOf="@+id/connect_button"
+        android:layout_marginTop="49dp"
+        android:id="@+id/eeg_btn" />
+
+    <Button
+        android:text="ALPHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/eeg_btn"
+        android:layout_toRightOf="@+id/connect_button"
+        android:layout_toEndOf="@+id/connect_button"
+        android:id="@+id/alpha_btn" />
+
+    <Button
+        android:text="BETA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eeg_btn"
+        android:layout_alignLeft="@+id/eeg_btn"
+        android:layout_alignStart="@+id/eeg_btn"
+        android:layout_marginTop="39dp"
+        android:id="@+id/beta_btn" />
+
+    <Button
+        android:text="GAMMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/beta_btn"
+        android:layout_alignLeft="@+id/alpha_btn"
+        android:layout_alignStart="@+id/alpha_btn"
+        android:id="@+id/gamma_btn" />
+
+    <Button
+        android:text="THETA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beta_btn"
+        android:layout_alignLeft="@+id/beta_btn"
+        android:layout_alignStart="@+id/beta_btn"
+        android:layout_marginTop="55dp"
+        android:id="@+id/theta_btn" />
+
+    <Button
+        android:text="DELTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/theta_btn"
+        android:layout_alignLeft="@+id/gamma_btn"
+        android:layout_alignStart="@+id/gamma_btn"
+        android:id="@+id/delta_btn" />
 </RelativeLayout>

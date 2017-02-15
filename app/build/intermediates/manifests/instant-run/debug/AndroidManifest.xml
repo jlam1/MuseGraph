@@ -43,6 +43,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.choosemuse.example.libmuse.AlphaActivity" />
+        <activity android:name="com.choosemuse.example.libmuse.BetaActivity" />
+        <activity android:name="com.choosemuse.example.libmuse.GammaActivity" />
+        <activity android:name="com.choosemuse.example.libmuse.ThetaActivity" />
     </application>
 
 </manifest>

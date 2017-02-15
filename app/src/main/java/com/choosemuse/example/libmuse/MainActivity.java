@@ -132,10 +132,15 @@ public class MainActivity extends Activity implements OnClickListener {
      */
     public static final double[] eegBuffer = new double[6];
     public static boolean eegStale;
-    private final double[] alphaBuffer = new double[6];
-    private boolean alphaStale;
+    public static final double[] alphaBuffer = new double[6];
+    public static boolean alphaStale;
     private final double[] accelBuffer = new double[3];
     private boolean accelStale;
+
+    public static final double[] betaBuffer = new double[6];
+    public static final double[] gammaBuffer = new double[6];
+    public static final double[] thetaBuffer = new double[6];
+    public static final double[] deltaBuffer = new double[6];
 
     /**
      * We will be updating the UI using a handler instead of in packet handlers because
@@ -169,9 +174,6 @@ public class MainActivity extends Activity implements OnClickListener {
      * to a handler on a separate thread.
      */
     private final AtomicReference<Handler> fileHandler = new AtomicReference<>();
-
-    private Bundle bundled;
-
 
     //--------------------------------------
     // Lifecycle / Connection code
@@ -212,10 +214,7 @@ public class MainActivity extends Activity implements OnClickListener {
         fileThread.start();
 
         // Start our asynchronous updates of the UI.
-        handler.post(tickUi);
-
-        bundled = new Bundle();
-
+//        handler.post(tickUi);
     }
 
     protected void onPause() {
@@ -269,10 +268,14 @@ public class MainActivity extends Activity implements OnClickListener {
                 muse.registerConnectionListener(connectionListener);
                 muse.registerDataListener(dataListener, MuseDataPacketType.EEG);
                 muse.registerDataListener(dataListener, MuseDataPacketType.ALPHA_RELATIVE);
-                muse.registerDataListener(dataListener, MuseDataPacketType.ACCELEROMETER);
-                muse.registerDataListener(dataListener, MuseDataPacketType.BATTERY);
-                muse.registerDataListener(dataListener, MuseDataPacketType.DRL_REF);
-                muse.registerDataListener(dataListener, MuseDataPacketType.QUANTIZATION);
+                muse.registerDataListener(dataListener, MuseDataPacketType.BETA_SCORE);
+                muse.registerDataListener(dataListener, MuseDataPacketType.GAMMA_SCORE);
+                muse.registerDataListener(dataListener, MuseDataPacketType.DELTA_SCORE);
+                muse.registerDataListener(dataListener, MuseDataPacketType.THETA_SCORE);
+//                muse.registerDataListener(dataListener, MuseDataPacketType.ACCELEROMETER);
+//                muse.registerDataListener(dataListener, MuseDataPacketType.BATTERY);
+//                muse.registerDataListener(dataListener, MuseDataPacketType.DRL_REF);
+//                muse.registerDataListener(dataListener, MuseDataPacketType.QUANTIZATION);
 
                 // Initiate a connection to the headband and stream the data asynchronously.
                 muse.runAsynchronously();
@@ -297,29 +300,6 @@ public class MainActivity extends Activity implements OnClickListener {
                 dataTransmission = !dataTransmission;
                 muse.enableDataTransmission(dataTransmission);
             }
-        }
-        else if (v.getId() == R.id.eeg_button) {
-            bundled = new Bundle();
-            bundled.putDouble("EEG_Buffer", eegBuffer[0]);
-            Intent intent = new Intent(this, EegActivity.class);
-            intent.putExtras(bundled);
-            startActivity(intent);
-        }
-        else if (v.getId() == R.id.delta_button) {
-            Intent intent = new Intent(this, DeltaActivity.class);
-            startActivity(intent);
-        }
-        else if (v.getId() == R.id.theta_button) {
-
-        }
-        else if (v.getId() == R.id.alpha_button) {
-
-        }
-        else if (v.getId() == R.id.beta_button) {
-
-        }
-        else if (v.getId() == R.id.gamma_button) {
-
         }
     }
 
@@ -459,6 +439,22 @@ public class MainActivity extends Activity implements OnClickListener {
                 getEegChannelValues(alphaBuffer,p);
                 alphaStale = true;
                 break;
+            case BETA_RELATIVE:
+                assert(betaBuffer.length >= n);
+                getEegChannelValues(betaBuffer,p);
+                break;
+            case GAMMA_RELATIVE:
+                assert(gammaBuffer.length >= n);
+                getEegChannelValues(gammaBuffer,p);
+                break;
+            case DELTA_RELATIVE:
+                assert(deltaBuffer.length >= n);
+                getEegChannelValues(deltaBuffer,p);
+                break;
+            case THETA_RELATIVE:
+                assert(thetaBuffer.length >= n);
+                getEegChannelValues(thetaBuffer,p);
+                break;
             case BATTERY:
             case DRL_REF:
             case QUANTIZATION:
@@ -520,11 +516,6 @@ public class MainActivity extends Activity implements OnClickListener {
         Button pauseButton = (Button) findViewById(R.id.pause);
         pauseButton.setOnClickListener(this);
 
-        Button eegButton = (Button) findViewById(R.id.eeg_button);
-        eegButton.setOnClickListener(this);
-        Button deltaButton = (Button) findViewById(R.id.delta_button);
-        deltaButton.setOnClickListener(this);
-
         spinnerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
         Spinner musesSpinner = (Spinner) findViewById(R.id.muses_spinner);
         musesSpinner.setAdapter(spinnerAdapter);
@@ -539,21 +530,21 @@ public class MainActivity extends Activity implements OnClickListener {
      * functions do some string allocation, so this reduces our memory
      * footprint and makes GC pauses less frequent/noticeable.
      */
-    private final Runnable tickUi = new Runnable() {
-        @Override
-        public void run() {
-            if (eegStale) {
-                updateEeg();
-            }
+//    private final Runnable tickUi = new Runnable() {
+//        @Override
+//        public void run() {
+//            if (eegStale) {
+//                updateEeg();
+//            }
 //            if (accelStale) {
 //                updateAccel();
 //            }
 //            if (alphaStale) {
 //                updateAlpha();
 //            }
-            handler.postDelayed(tickUi, 1000 / 60);
-        }
-    };
+//            handler.postDelayed(tickUi, 1000 / 60);
+//        }
+//    };
 
     /**
      * The following methods update the TextViews in the UI with the data
@@ -568,16 +559,16 @@ public class MainActivity extends Activity implements OnClickListener {
 //        acc_z.setText(String.format("%6.2f", accelBuffer[2]));
 //    }
 
-    private void updateEeg() {
-        TextView tp9 = (TextView)findViewById(R.id.eeg_tp9);
-        TextView fp1 = (TextView)findViewById(R.id.eeg_af7);
-        TextView fp2 = (TextView)findViewById(R.id.eeg_af8);
-        TextView tp10 = (TextView)findViewById(R.id.eeg_tp10);
-        tp9.setText(String.format("%6.2f", eegBuffer[0]));
-        fp1.setText(String.format("%6.2f", eegBuffer[1]));
-        fp2.setText(String.format("%6.2f", eegBuffer[2]));
-        tp10.setText(String.format("%6.2f", eegBuffer[3]));
-    }
+//    private void updateEeg() {
+//        TextView tp9 = (TextView)findViewById(R.id.eeg_tp9);
+//        TextView fp1 = (TextView)findViewById(R.id.eeg_af7);
+//        TextView fp2 = (TextView)findViewById(R.id.eeg_af8);
+//        TextView tp10 = (TextView)findViewById(R.id.eeg_tp10);
+//        tp9.setText(String.format("%6.2f", eegBuffer[0]));
+//        fp1.setText(String.format("%6.2f", eegBuffer[1]));
+//        fp2.setText(String.format("%6.2f", eegBuffer[2]));
+//        tp10.setText(String.format("%6.2f", eegBuffer[3]));
+//    }
 
 //    private void updateAlpha() {
 //        TextView elem1 = (TextView)findViewById(R.id.elem1);
