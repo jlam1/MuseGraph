@@ -1,6 +1,6 @@
 ### Description
 An app using the [Muse](http://www.choosemuse.com/) and outputting data into a graph using Android Studio.
-More information at my blog at [groovycoding](https://jlam1.github.io/groovycoding/project/2017/02/21/the-muse-project.html) on how to use the research tools and setting up this project.
+More information at my blog at [here](https://jlam1.github.io/the-muse-project) on how to use the research tools and setting up this project.
 
 ### Screenshots
 <img src="/screenshots/menu.PNG" width = "250"/>
