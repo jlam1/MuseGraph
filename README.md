@@ -3,9 +3,13 @@ An app using the [Muse](http://www.choosemuse.com/) and outputting data into a g
 More information at my blog at [here](https://jlam1.github.io/the-muse-project) on how to use the research tools and setting up this project.
 
 ### Screenshots
-<img src="/screenshots/menu.PNG" width = "250"/>
-<img src="/screenshots/connection_settings.PNG" width = "250"/>
-<img src="/screenshots/example2.png" width = "250"/>
+<table>
+<tr>
+<td><img src="/screenshots/menu.PNG" width = "250"/></td>
+<td><img src="/screenshots/connection_settings.PNG" width = "250"/></td>
+<td><img src="/screenshots/example2.png" width = "250"/></td>
+</tr>
+</table>
 
 ### References
 * [Muse's Research Tools](http://dev.choosemuse.com/research-tools/getting-started)
